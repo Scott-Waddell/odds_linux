@@ -12,3 +12,5 @@ password Scott_Mac_2025
 Port 22
 
 then I navigated to the folder in my linux files and selected to the doc to download.
+
+I'm amazed that I managed to do something and pushed it over here.
