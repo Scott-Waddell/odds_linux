@@ -1,0 +1,14 @@
+I googled 'embl GRCm39'
+then from the Ensembl page I took the download tab at top of screen
+then dataset and database box bottom left and clicked on FTP site link
+from both the current fasta/ and current gtf/ folders I found the correct files and 'control click' copied the URL which I pasted into the command line
+
+eg. wget ftp.ensembl.org/pub/current_gtf/mus_musculus/Mus_musculus.GRCm39.113.gtf.gz
+ 
+to download this file I used filezilla
+host obds
+username dpag0390
+password Scott_Mac_2025
+Port 22
+
+then I navigated to the folder in my linux files and selected to the doc to download.
