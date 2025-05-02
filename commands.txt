@@ -1,0 +1,1652 @@
+Last login: Thu May  1 09:18:50 on ttys000
+scottwaddell@Scotts-MacBook-Pro ~ % ssh obds
+/home/imm/dpag0390
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+dpag0390@obds:~$ /project/0390
+zsh: no such file or directory: /project/0390
+dpag0390@obds:~$ cd project/0390
+cd: no such file or directory: project/0390
+dpag0390@obds:~$ cd /project/0390
+cd: no such file or directory: /project/0390
+dpag0390@obds:~$ ls
+1_fastq  2_rnaseq  in
+dpag0390@obds:~$ pwd
+/home/imm/dpag0390
+dpag0390@obds:~$ cd /project/0390/
+cd: no such file or directory: /project/0390/
+dpag0390@obds:~$ cd project/dpag0390
+cd: no such file or directory: project/dpag0390
+dpag0390@obds:~$ cd /project/dpag0390
+dpag0390@obds:/project/dpag0390$ ls
+1_linux  git  HOME  linux  mamba_installation  SHARED
+dpag0390@obds:/project/dpag0390$ cd linux
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis 
+dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 1_fastq 
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ ls
+cd4_rep1_read1.fastq.gz  cd4_rep2_read2.fastq.gz  md5sum.txt
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ sbatch nano slurmclient_loop: send disconnect: Broken pipe
+scottwaddell@Scotts-MacBook-Pro ~ % ssh obds
+/home/imm/dpag0390
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+dpag0390@obds:~$ wd
+/project/dpag0390
+1_linux  git  HOME  linux  mamba_installation  SHARED
+dpag0390@obds:/project/dpag0390$ cd 1_linux 
+dpag0390@obds:/project/dpag0390/1_linux$ ls
+1_linux_intro  file1.txt  readme.txt  test.txt
+dpag0390@obds:/project/dpag0390/1_linux$ cd ../linux 
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 1_fastq 
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ ll
+total 4.0K
+lrwxrwxrwx 1 dpag0390 grp_obds_trainers  60 Apr 29 13:46 cd4_rep1_read1.fastq.gz -> /project/shared/linux/5_rnaseq/fastq/cd4_rep1_read1.fastq.gz
+lrwxrwxrwx 1 dpag0390 grp_obds_trainers  60 Apr 29 13:55 cd4_rep2_read2.fastq.gz -> /project/shared/linux/5_rnaseq/fastq/cd4_rep2_read2.fastq.gz
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 696 Apr 29 13:58 md5sum.txt
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ watch squeue 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   slurm_template.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano slurm_template.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cp slurm_template.sh slurm_mapping.sh  
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html  slurm_template.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano slurm_mapping.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano hisat2.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cp hisat2.sh mapping.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip   slurm_template.sh
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ load_mamba
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 156
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               149       cpu slurm_sa magd5185  R      14:41      1 obds
+               157       cpu slurm_sa clme2295  R       0:00      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  156_mapping.sh.err        aln-pe.bam                  cd4_rep1_read1_fastqc.zip   mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  156_mapping.sh.out        aln-pe.sam                  cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  81_slurm_template.sh.err  aln-pe_sorted.bam           cd4_rep2_read2_fastqc.zip   slurm_template.sh
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  81_slurm_template.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 156_mapping.sh.err
+[main] unrecognized command '--threads'
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 158
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               159       cpu slurm_sa bioc1402 PD       0:00      1 (None)
+               149       cpu slurm_sa magd5185  R      17:10      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.out  140_hisat2.sh.err  143_hisat2.sh.out   81_slurm_template.sh.err  cd4_rep1_read1_fastqc.html  mapping.sh
+107_hisat2.sh.out  127_hisat2.sh.err  140_hisat2.sh.out  156_mapping.sh.err  81_slurm_template.sh.out  cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.out  142_hisat2.sh.err  156_mapping.sh.out  aln-pe.bam                cd4_rep2_read2_fastqc.html  slurm_template.sh
+116_hisat2.sh.out  133_hisat2.sh.err  142_hisat2.sh.out  158_mapping.sh.err  aln-pe.sam                cd4_rep2_read2_fastqc.zip
+122_hisat2.sh.err  133_hisat2.sh.out  143_hisat2.sh.err  158_mapping.sh.out  aln-pe_sorted.bam         hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 158_mapping.sh.err
+/var/spool/slurmd/job00158/slurm_script: line 47: -x: command not found
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 167
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               159       cpu slurm_sa bioc1402  R       6:47      1 obds
+               161       cpu slurm_ma exet5457  R       4:56      1 obds
+               162       cpu slurm_cd hert7274  R       3:40      1 obds
+               163       cpu samtools lady6692  R       2:36      1 obds
+               164       cpu slurm_sa magd5185  R       2:26      1 obds
+               165       cpu samtools grte3920  R       1:50      1 obds
+               166       cpu slurm_ma bras5846  R       1:03      1 obds
+               167       cpu mapping. dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  127_hisat2.sh.out  143_hisat2.sh.err   167_mapping.sh.out        197_mapping_stats.sh.err     aln-pe.idxstats_fastqc.zip  cd4_rep2_read2_fastqc.zip
+107_hisat2.sh.out  133_hisat2.sh.err  143_hisat2.sh.out   186_mapping_stats.sh.err  197_mapping_stats.sh.out     aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  133_hisat2.sh.out  156_mapping.sh.err  186_mapping_stats.sh.out  81_slurm_template.sh.err     aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  140_hisat2.sh.err  156_mapping.sh.out  189_mapping_stats.sh.err  81_slurm_template.sh.out     aln-pe_sorted.flagstat      mapping.sh
+122_hisat2.sh.err  140_hisat2.sh.out  158_mapping.sh.err  189_mapping_stats.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.html  mapping_stats.sh
+122_hisat2.sh.out  142_hisat2.sh.err  158_mapping.sh.out  195_mapping_stats.sh.err  aln-pe.idxstats              cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  142_hisat2.sh.out  167_mapping.sh.err  195_mapping_stats.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.html  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 2_genome 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd 1_fastqc 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err   156_mapping.sh.out         226_feature_counts.sh.err    feature_counts.sh                   samtools.1053815.3066.tmp.0013.bam
+107_hisat2.sh.out   158_mapping.sh.err         226_feature_counts.sh.out    hisat2.sh                           samtools.1053815.3066.tmp.0014.bam
+116_hisat2.sh.err   158_mapping.sh.out         235_mapping.sh.err           mapping.sh                          samtools.1053815.3066.tmp.0015.bam
+116_hisat2.sh.out   167_mapping.sh.err         235_mapping.sh.out           mapping_stats.sh                    samtools.1053815.3066.tmp.0016.bam
+122_hisat2.sh.err   167_mapping.sh.out         81_slurm_template.sh.err     samtools.1053815.3066.tmp.0000.bam  samtools.1053815.3066.tmp.0017.bam
+122_hisat2.sh.out   186_mapping_stats.sh.err   81_slurm_template.sh.out     samtools.1053815.3066.tmp.0001.bam  samtools.1053815.3066.tmp.0018.bam
+127_hisat2.sh.err   186_mapping_stats.sh.out   aln-pe.bam                   samtools.1053815.3066.tmp.0002.bam  samtools.1053815.3066.tmp.0019.bam
+127_hisat2.sh.out   189_mapping_stats.sh.err   aln-pe.idxstats              samtools.1053815.3066.tmp.0003.bam  samtools.1053815.3066.tmp.0020.bam
+133_hisat2.sh.err   189_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  samtools.1053815.3066.tmp.0004.bam  samtools.1053815.3066.tmp.0021.bam
+133_hisat2.sh.out   195_mapping_stats.sh.err   aln-pe.idxstats_fastqc.zip   samtools.1053815.3066.tmp.0005.bam  samtools.1053815.3066.tmp.0022.bam
+140_hisat2.sh.err   195_mapping_stats.sh.out   aln-pe.sam                   samtools.1053815.3066.tmp.0006.bam  samtools.1053815.3066.tmp.0023.bam
+140_hisat2.sh.out   197_mapping_stats.sh.err   aln-pe_sorted.bam            samtools.1053815.3066.tmp.0007.bam  samtools.1053815.3066.tmp.0024.bam
+142_hisat2.sh.err   197_mapping_stats.sh.out   aln-pe_sorted.flagstat       samtools.1053815.3066.tmp.0008.bam  samtools.1053815.3066.tmp.0025.bam
+142_hisat2.sh.out   214_feature_counts.sh.err  cd4_rep1_read1_fastqc.html   samtools.1053815.3066.tmp.0009.bam  samtools.1053815.3066.tmp.0026.bam
+143_hisat2.sh.err   214_feature_counts.sh.out  cd4_rep1_read1_fastqc.zip    samtools.1053815.3066.tmp.0010.bam  samtools.1053815.3066.tmp.0027.bam
+143_hisat2.sh.out   220_feature_counts.sh.err  cd4_rep2_read2_fastqc.html   samtools.1053815.3066.tmp.0011.bam  slurm_mapping.sh
+156_mapping.sh.err  220_feature_counts.sh.out  cd4_rep2_read2_fastqc.zip    samtools.1053815.3066.tmp.0012.bam  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe_sorted.bam           mapping.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+Last login: Thu May  1 09:18:50 on ttys000
+scottwaddell@Scotts-MacBook-Pro ~ % ssh obds
+/home/imm/dpag0390
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+dpag0390@obds:~$ /project/0390
+zsh: no such file or directory: /project/0390
+dpag0390@obds:~$ cd project/0390
+cd: no such file or directory: project/0390
+dpag0390@obds:~$ cd /project/0390
+cd: no such file or directory: /project/0390
+dpag0390@obds:~$ ls
+1_fastq  2_rnaseq  in
+dpag0390@obds:~$ pwd
+/home/imm/dpag0390
+dpag0390@obds:~$ cd /project/0390/
+cd: no such file or directory: /project/0390/
+dpag0390@obds:~$ cd project/dpag0390
+cd: no such file or directory: project/dpag0390
+dpag0390@obds:~$ cd /project/dpag0390
+dpag0390@obds:/project/dpag0390$ ls
+1_linux  git  HOME  linux  mamba_installation  SHARED
+dpag0390@obds:/project/dpag0390$ cd linux
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis 
+dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 1_fastq 
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ ls
+cd4_rep1_read1.fastq.gz  cd4_rep2_read2.fastq.gz  md5sum.txt
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ sbatch nano slurmclient_loop: send disconnect: Broken pipe
+scottwaddell@Scotts-MacBook-Pro ~ % ssh obds
+/home/imm/dpag0390
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+dpag0390@obds:~$ wd
+/project/dpag0390
+1_linux  git  HOME  linux  mamba_installation  SHARED
+dpag0390@obds:/project/dpag0390$ cd 1_linux 
+dpag0390@obds:/project/dpag0390/1_linux$ ls
+1_linux_intro  file1.txt  readme.txt  test.txt
+dpag0390@obds:/project/dpag0390/1_linux$ cd ../linux 
+dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+dpag0390@obds:/project/dpag0390/linux$ cd 1_fastq 
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ ll
+total 4.0K
+lrwxrwxrwx 1 dpag0390 grp_obds_trainers  60 Apr 29 13:46 cd4_rep1_read1.fastq.gz -> /project/shared/linux/5_rnaseq/fastq/cd4_rep1_read1.fastq.gz
+lrwxrwxrwx 1 dpag0390 grp_obds_trainers  60 Apr 29 13:55 cd4_rep2_read2.fastq.gz -> /project/shared/linux/5_rnaseq/fastq/cd4_rep2_read2.fastq.gz
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 696 Apr 29 13:58 md5sum.txt
+dpag0390@obds:/project/dpag0390/linux/1_fastq$ watch squeue 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   slurm_template.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano slurm_template.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cp slurm_template.sh slurm_mapping.sh  
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html  slurm_template.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano slurm_mapping.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano hisat2.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cp hisat2.sh mapping.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  81_slurm_template.sh.err    cd4_rep1_read1_fastqc.zip   mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  81_slurm_template.sh.out    cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  aln-pe.sam                  cd4_rep2_read2_fastqc.zip   slurm_template.sh
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ load_mamba
+WARNING: /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh (the file emitting this warning) is deprecated.
+WARNING: This file will be removed on the next release after 30th September 2025.
+WARNING: Please use 'mamba shell init' to get the correct initialization for your shell.
+WARNING: The MAMBA_ROOT_PREFIX environment variable is not set.
+WARNING: This is required for mamba to work correctly as of 2.0.
+WARNING: 
+WARNING: For now, we are setting 'MAMBA_ROOT_PREFIX' to '/project/dpag0390/mamba_installation/conda'.
+WARNING: 
+WARNING: Please make sure this is consistent with your installation or alternatively (by order of preference):
+WARNING:   - rerun 'mamba shell init' to initialize mamba for your current shell
+WARNING:   - manually set 'MAMBA_ROOT_PREFIX' to the root of your installation in your shell profile script.
+WARNING:   - use the '-r,--root-prefix' CLI option when calling mamba.
+WARNING: 
+WARNING: This message originates from /project/dpag0390/mamba_installation/conda/etc/profile.d/mamba.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 156
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               149       cpu slurm_sa magd5185  R      14:41      1 obds
+               157       cpu slurm_sa clme2295  R       0:00      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.err  133_hisat2.sh.err  142_hisat2.sh.err  156_mapping.sh.err        aln-pe.bam                  cd4_rep1_read1_fastqc.zip   mapping.sh
+107_hisat2.sh.out  122_hisat2.sh.out  133_hisat2.sh.out  142_hisat2.sh.out  156_mapping.sh.out        aln-pe.sam                  cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.err  140_hisat2.sh.err  143_hisat2.sh.err  81_slurm_template.sh.err  aln-pe_sorted.bam           cd4_rep2_read2_fastqc.zip   slurm_template.sh
+116_hisat2.sh.out  127_hisat2.sh.out  140_hisat2.sh.out  143_hisat2.sh.out  81_slurm_template.sh.out  cd4_rep1_read1_fastqc.html  hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 156_mapping.sh.err
+[main] unrecognized command '--threads'
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 158
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               159       cpu slurm_sa bioc1402 PD       0:00      1 (None)
+               149       cpu slurm_sa magd5185  R      17:10      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  122_hisat2.sh.out  140_hisat2.sh.err  143_hisat2.sh.out   81_slurm_template.sh.err  cd4_rep1_read1_fastqc.html  mapping.sh
+107_hisat2.sh.out  127_hisat2.sh.err  140_hisat2.sh.out  156_mapping.sh.err  81_slurm_template.sh.out  cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+116_hisat2.sh.err  127_hisat2.sh.out  142_hisat2.sh.err  156_mapping.sh.out  aln-pe.bam                cd4_rep2_read2_fastqc.html  slurm_template.sh
+116_hisat2.sh.out  133_hisat2.sh.err  142_hisat2.sh.out  158_mapping.sh.err  aln-pe.sam                cd4_rep2_read2_fastqc.zip
+122_hisat2.sh.err  133_hisat2.sh.out  143_hisat2.sh.err  158_mapping.sh.out  aln-pe_sorted.bam         hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 158_mapping.sh.err
+/var/spool/slurmd/job00158/slurm_script: line 47: -x: command not found
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping.sh 
+Submitted batch job 167
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               159       cpu slurm_sa bioc1402  R       6:47      1 obds
+               161       cpu slurm_ma exet5457  R       4:56      1 obds
+               162       cpu slurm_cd hert7274  R       3:40      1 obds
+               163       cpu samtools lady6692  R       2:36      1 obds
+               164       cpu slurm_sa magd5185  R       2:26      1 obds
+               165       cpu samtools grte3920  R       1:50      1 obds
+               166       cpu slurm_ma bras5846  R       1:03      1 obds
+               167       cpu mapping. dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  127_hisat2.sh.out  143_hisat2.sh.err   167_mapping.sh.out        197_mapping_stats.sh.err     aln-pe.idxstats_fastqc.zip  cd4_rep2_read2_fastqc.zip
+107_hisat2.sh.out  133_hisat2.sh.err  143_hisat2.sh.out   186_mapping_stats.sh.err  197_mapping_stats.sh.out     aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  133_hisat2.sh.out  156_mapping.sh.err  186_mapping_stats.sh.out  81_slurm_template.sh.err     aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  140_hisat2.sh.err  156_mapping.sh.out  189_mapping_stats.sh.err  81_slurm_template.sh.out     aln-pe_sorted.flagstat      mapping.sh
+122_hisat2.sh.err  140_hisat2.sh.out  158_mapping.sh.err  189_mapping_stats.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.html  mapping_stats.sh
+122_hisat2.sh.out  142_hisat2.sh.err  158_mapping.sh.out  195_mapping_stats.sh.err  aln-pe.idxstats              cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  142_hisat2.sh.out  167_mapping.sh.err  195_mapping_stats.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.html  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ ls
+1_fastq  2_genome  3_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 2_genome 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd 1_fastqc 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err   156_mapping.sh.out         226_feature_counts.sh.err    feature_counts.sh                   samtools.1053815.3066.tmp.0013.bam
+107_hisat2.sh.out   158_mapping.sh.err         226_feature_counts.sh.out    hisat2.sh                           samtools.1053815.3066.tmp.0014.bam
+116_hisat2.sh.err   158_mapping.sh.out         235_mapping.sh.err           mapping.sh                          samtools.1053815.3066.tmp.0015.bam
+116_hisat2.sh.out   167_mapping.sh.err         235_mapping.sh.out           mapping_stats.sh                    samtools.1053815.3066.tmp.0016.bam
+122_hisat2.sh.err   167_mapping.sh.out         81_slurm_template.sh.err     samtools.1053815.3066.tmp.0000.bam  samtools.1053815.3066.tmp.0017.bam
+122_hisat2.sh.out   186_mapping_stats.sh.err   81_slurm_template.sh.out     samtools.1053815.3066.tmp.0001.bam  samtools.1053815.3066.tmp.0018.bam
+127_hisat2.sh.err   186_mapping_stats.sh.out   aln-pe.bam                   samtools.1053815.3066.tmp.0002.bam  samtools.1053815.3066.tmp.0019.bam
+127_hisat2.sh.out   189_mapping_stats.sh.err   aln-pe.idxstats              samtools.1053815.3066.tmp.0003.bam  samtools.1053815.3066.tmp.0020.bam
+133_hisat2.sh.err   189_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  samtools.1053815.3066.tmp.0004.bam  samtools.1053815.3066.tmp.0021.bam
+133_hisat2.sh.out   195_mapping_stats.sh.err   aln-pe.idxstats_fastqc.zip   samtools.1053815.3066.tmp.0005.bam  samtools.1053815.3066.tmp.0022.bam
+140_hisat2.sh.err   195_mapping_stats.sh.out   aln-pe.sam                   samtools.1053815.3066.tmp.0006.bam  samtools.1053815.3066.tmp.0023.bam
+140_hisat2.sh.out   197_mapping_stats.sh.err   aln-pe_sorted.bam            samtools.1053815.3066.tmp.0007.bam  samtools.1053815.3066.tmp.0024.bam
+142_hisat2.sh.err   197_mapping_stats.sh.out   aln-pe_sorted.flagstat       samtools.1053815.3066.tmp.0008.bam  samtools.1053815.3066.tmp.0025.bam
+142_hisat2.sh.out   214_feature_counts.sh.err  cd4_rep1_read1_fastqc.html   samtools.1053815.3066.tmp.0009.bam  samtools.1053815.3066.tmp.0026.bam
+143_hisat2.sh.err   214_feature_counts.sh.out  cd4_rep1_read1_fastqc.zip    samtools.1053815.3066.tmp.0010.bam  samtools.1053815.3066.tmp.0027.bam
+143_hisat2.sh.out   220_feature_counts.sh.err  cd4_rep2_read2_fastqc.html   samtools.1053815.3066.tmp.0011.bam  slurm_mapping.sh
+156_mapping.sh.err  220_feature_counts.sh.out  cd4_rep2_read2_fastqc.zip    samtools.1053815.3066.tmp.0012.bam  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe_sorted.bam           mapping.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   feature_counts.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.sam                   hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh   
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29739712
+drwxr-sr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:35 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 11:23 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1975 May  2 12:01 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1945 May  2 11:21 mapping_stats.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls                       
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe_sorted.bam           mapping.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   feature_counts.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.sam                   hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping_stats.sh 
+Submitted batch job 256
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               256       cpu mapping_ dpag0390  R       0:07      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe.idxstats_fastqc.zip  feature_counts.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe.sam                  hisat2.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out     aln-pe_sorted.bam.bai       mapping_stats.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29739716
+drwxr-sr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:40 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:40 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 12:40 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1975 May  2 12:01 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1959 May  2 12:39 mapping_stats.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe.idxstats_fastqc.zip  feature_counts.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe.sam                  hisat2.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out     aln-pe_sorted.bam.bai       mapping_stats.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 256_mapping_stats.sh.err
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 256_mapping_stats.sh.err
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping_stats.sh 
+Submitted batch job 258
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               258       cpu mapping_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err        aln-pe.idxstats              cd4_rep1_read1_fastqc.zip
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out        aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.html
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err  aln-pe.idxstats_fastqc.zip   cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out  aln-pe.sam                   feature_counts.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  258_mapping_stats.sh.err  aln-pe_sorted.bam            hisat2.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  258_mapping_stats.sh.out  aln-pe_sorted.bam.bai        mapping.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  81_slurm_template.sh.err  aln-pe_sorted.flagstat       mapping_stats.sh
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  81_slurm_template.sh.out  aln-pe_sorted.idxstats       slurm_mapping.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.bam                cd4_rep1_read1_fastqc.html   slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc aln-pe_sorted.idxstats 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/aln-pe_sorted.idxstats
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+          samtools | Found 1 idxstats reports
+     write_results | Data        : multiqc_data
+     write_results | Report      : multiqc_report.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh   
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 261
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               261       cpu feature_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.err   167_mapping.sh.err        214_feature_counts.sh.err  258_mapping_stats.sh.err     aln-pe.sam                  hisat2.sh
+107_hisat2.sh.out  140_hisat2.sh.out   167_mapping.sh.out        214_feature_counts.sh.out  258_mapping_stats.sh.out     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.err   186_mapping_stats.sh.err  220_feature_counts.sh.err  261_feature_counts.sh.err    aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.out  142_hisat2.sh.out   186_mapping_stats.sh.out  220_feature_counts.sh.out  261_feature_counts.sh.out    aln-pe_sorted.flagstat      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.err   189_mapping_stats.sh.err  226_feature_counts.sh.err  81_slurm_template.sh.err     aln-pe_sorted.idxstats      multiqc_report.html
+122_hisat2.sh.out  143_hisat2.sh.out   189_mapping_stats.sh.out  226_feature_counts.sh.out  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.err  195_mapping_stats.sh.err  235_mapping.sh.err         aln-pe.bam                   cd4_rep1_read1_fastqc.zip   slurm_template.sh
+127_hisat2.sh.out  156_mapping.sh.out  195_mapping_stats.sh.out  235_mapping.sh.out         aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  158_mapping.sh.err  197_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.out  158_mapping.sh.out  197_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat feature_counts.sh.err
+cat: feature_counts.sh.err: No such file or directory
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cbatch feature_counts.sh 
+zsh: command not found: cbatch
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 263
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               263       cpu feature_ dpag0390  R       0:05      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.err   167_mapping.sh.err        214_feature_counts.sh.err  258_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+107_hisat2.sh.out  140_hisat2.sh.out   167_mapping.sh.out        214_feature_counts.sh.out  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.err   186_mapping_stats.sh.err  220_feature_counts.sh.err  261_feature_counts.sh.err  aln-pe.sam                   hisat2.sh
+116_hisat2.sh.out  142_hisat2.sh.out   186_mapping_stats.sh.out  220_feature_counts.sh.out  261_feature_counts.sh.out  aln-pe_sorted.bam            mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.err   189_mapping_stats.sh.err  226_feature_counts.sh.err  263_feature_counts.sh.err  aln-pe_sorted.bam.bai        mapping_stats.sh
+122_hisat2.sh.out  143_hisat2.sh.out   189_mapping_stats.sh.out  226_feature_counts.sh.out  263_feature_counts.sh.out  aln-pe_sorted.flagstat       multiqc_data
+127_hisat2.sh.err  156_mapping.sh.err  195_mapping_stats.sh.err  235_mapping.sh.err         81_slurm_template.sh.err   aln-pe_sorted.idxstats       multiqc_report.html
+127_hisat2.sh.out  156_mapping.sh.out  195_mapping_stats.sh.out  235_mapping.sh.out         81_slurm_template.sh.out   cd4_rep1_read1_fastqc.html   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.err  197_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.bam                 cd4_rep1_read1_fastqc.zip    slurm_template.sh
+133_hisat2.sh.out  158_mapping.sh.out  197_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats            cd4_rep2_read2_fastqc.html
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 263_feature_counts.sh.err
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.8
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           aln-pe_sorted.bam                                ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : Mus_musculus.GRCm39.113.gtf.gz (GTF)             ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Mus_musculus.GRCm39.113.gtf.gz ...                    ||
+||    Features : 1298756                                                      ||
+||    Meta-features : 78298                                                   ||
+||    Chromosomes/contigs : 38                                                ||
+||                                                                            ||
+|| Process BAM file aln-pe_sorted.bam...                                      ||
+ERROR: Paired-end reads were detected in single-end read library : aln-pe_sorted.bam
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 265
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               264       cpu rnaseq_c lady6692  R       3:21      1 obds
+               265       cpu feature_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls 
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ head counts.txt
+# Program:featureCounts v2.0.8; Command:"featureCounts" "-p" "-t" "exon" "-g" "gene_id" "-a" "/project/dpag0390/linux/2_genome/Mus_musculus.GRCm39.113.gtf.gz" "-o" "counts.txt" "aln-pe_sorted.bam" 
+Geneid	Chr	Start	End	Strand	Length	aln-pe_sorted.bam
+ENSMUSG00000104478	1	108344807	108347562	+	2756	0
+ENSMUSG00000104385	1	6980784	6981446	+	663	0
+ENSMUSG00000101231	1	108540067	108540244	-	178	0
+ENSMUSG00000102135	1;1	6986783;6993624	6987219;6993812	+;+	626	0
+ENSMUSG00000103282	1	6999983	7000012	+	30	0
+ENSMUSG00000101097	1	108697865	108699733	+	1869	0
+ENSMUSG00000100764	1;1;1	43781121;43782744;43782986	43781266;43783012;43783055	-;-;-	458	2
+ENSMUSG00000102534	1	7068441	7068765	+	325	0
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ tail counts.txt
+ENSMUSG00000095019	JH584303.1	81607	82689	+	1083	0
+ENSMUSG00000094915	GL456212.1;GL456212.1	31967;34741	32140;34932	-;-	366	0
+ENSMUSG00000079808	GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1	128555;130719;131304;135153;136529;137840;139015;140666;142982;145844;147542;150277	129000;130861;131405;135221;136681;137920;139092;140743;143248;146012;147689;150452	-;-;-;-;-;-;-;-;-;-;-;-	1910	69
+ENSMUSG00000095041	JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1	52190;52691;53536;54721;55112;55112;56986;56986;58564;58564;59592	52367;54867;54479;54867;55701;55701;57151;57151;59690;58835;59667	-;-;-;-;-;-;-;-;-;-;-	4238	6929
+ENSMUSG00000144201	JH584304.1;JH584304.1	24951;56778	25441;56818	-;-	532	24
+ENSMUSG00002075400	GL456239.1	38438	38535	+	98	0
+ENSMUSG00002074970	GL456385.1	31243	31343	+	101	0
+ENSMUSG00002075729	GL456385.1	32719	32818	+	100	0
+ENSMUSG00002074899	GL456372.1	13262	13382	-	121	1
+ENSMUSG00002076890	GL456381.1	16623	16721	-	99	0
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+           multiqc | No analysis results found. Cleaning up…
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29775456
+drwxr-sr-x 3 dpag0390 grp_obds_trainers        4096 May  2 13:01 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:45 258_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:45 258_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2803 May  2 12:49 261_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:49 261_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2803 May  2 12:54 263_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:54 263_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        3691 May  2 13:01 265_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:59 265_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:40 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 12:45 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:45 aln-pe_sorted.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers    31787645 May  2 13:01 counts.txt
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         385 May  2 13:01 counts.txt.summary
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1978 May  2 12:59 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1966 May  2 12:44 mapping_stats.sh
+drwxr-xr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:46 multiqc_data
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     4781670 May  2 12:46 multiqc_report.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt.summary 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt.summary
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+     featurecounts | Found 1 reports
+     write_results | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
+     write_results | Data        : multiqc_data_1
+     write_results | Report      : multiqc_report_1.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 2_genome 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cat downloads.txt 
+I googled 'embl GRCm39'
+then from the Ensembl page I took the download tab at top of screen
+then dataset and database box bottom left and clicked on FTP site link
+from both the current fasta/ and current gtf/ folders I found the correct files and 'control click' copied the URL which I pasted into the command line
+
+eg. wget ftp.ensembl.org/pub/current_gtf/mus_musculus/Mus_musculus.GRCm39.113.gtf.gz
+ 
+to download this file I used filezilla
+host obds
+username dpag0390
+password Scott_Mac_2025
+Port 22
+
+then I navigated to the folder in my linux files and selected to the doc to download.
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ wget ftp.ensembl.org/pub/release-102/gtf/mus_musculus/Mus_musculus.GRCm38.102.gtf.gz .
+--2025-05-02 13:39:35--  http://ftp.ensembl.org/pub/release-102/gtf/mus_musculus/Mus_musculus.GRCm38.102.gtf.gz
+Resolving ftp.ensembl.org (ftp.ensembl.org)... 193.62.193.169
+Connecting to ftp.ensembl.org (ftp.ensembl.org)|193.62.193.169|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 33443321 (32M) [application/x-gzip]
+Saving to: ‘Mus_musculus.GRCm38.102.gtf.gz’
+
+Mus_musculus.GRCm38.102.gtf.gz              100%[===========================================================================================>]  31.89M   105MB/s    in 0.3s    
+
+2025-05-02 13:39:36 (105 MB/s) - ‘Mus_musculus.GRCm38.102.gtf.gz’ saved [33443321/33443321]
+
+--2025-05-02 13:39:36--  http://./
+Resolving . (.)... failed: No address associated with hostname.
+wget: unable to resolve host address ‘.’
+FINISHED --2025-05-02 13:39:36--
+Total wall clock time: 0.4s
+Downloaded: 1 files, 32M in 0.3s (105 MB/s)
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm38.102.gtf.gz  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd 1_fastqc 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 275
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               273       cpu rnaseq_c lady6692  R       0:18      1 obds
+               274       cpu slurm_fe bioc1402  R       0:12      1 obds
+               275       cpu feature_ dpag0390  R       0:06      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe.idxstats_fastqc.zip  counts.txt.summary
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         275_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   275_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 275_feature_counts.sh.err
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.8
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           aln-pe_sorted.bam                                ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : Mus_musculus.GRCm38.102.gtf.gz (GTF)             ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Mus_musculus.GRCm38.102.gtf.gz ...                    ||
+||    Features : 843712                                                       ||
+||    Meta-features : 55487                                                   ||
+||    Chromosomes/contigs : 45                                                ||
+||                                                                            ||
+|| Process BAM file aln-pe_sorted.bam...                                      ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 104299805                                            ||
+||    Successfully assigned alignments : 46701573 (44.8%)                     ||
+||    Running time : 1.67 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "counts.txt.summary"      ||
+||                                                                            ||
+\\============================================================================//
+
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe.idxstats_fastqc.zip  counts.txt.summary
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         275_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   275_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt.summary 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt.summary
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+     featurecounts | Found 1 reports
+     write_results | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
+     write_results | Data        : multiqc_data_1_2
+     write_results | Report      : multiqc_report_2.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  143_hisat2.sh.err         197_mapping_stats.sh.err   261_feature_counts.sh.err    aln-pe.sam                  mapping_stats.sh
+107_hisat2.sh.out  143_hisat2.sh.out         197_mapping_stats.sh.out   261_feature_counts.sh.out    aln-pe_sorted.bam           multiqc_data
+116_hisat2.sh.err  156_mapping.sh.err        214_feature_counts.sh.err  263_feature_counts.sh.err    aln-pe_sorted.bam.bai       multiqc_data_1
+116_hisat2.sh.out  156_mapping.sh.out        214_feature_counts.sh.out  263_feature_counts.sh.out    aln-pe_sorted.flagstat      multiqc_data_1_2
+122_hisat2.sh.err  158_mapping.sh.err        220_feature_counts.sh.err  265_feature_counts.sh.err    aln-pe_sorted.idxstats      multiqc_report_1.html
+122_hisat2.sh.out  158_mapping.sh.out        220_feature_counts.sh.out  265_feature_counts.sh.out    cd4_rep1_read1_fastqc.html  multiqc_report_2.html
+127_hisat2.sh.err  167_mapping.sh.err        226_feature_counts.sh.err  275_feature_counts.sh.err    cd4_rep1_read1_fastqc.zip   multiqc_report.html
+127_hisat2.sh.out  167_mapping.sh.out        226_feature_counts.sh.out  275_feature_counts.sh.out    cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+133_hisat2.sh.err  186_mapping_stats.sh.err  235_mapping.sh.err         81_slurm_template.sh.err     cd4_rep2_read2_fastqc.zip   slurm_template.sh
+133_hisat2.sh.out  186_mapping_stats.sh.out  235_mapping.sh.out         81_slurm_template.sh.out     counts.txt
+140_hisat2.sh.err  189_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.bam                   counts.txt.summary
+140_hisat2.sh.out  189_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats              feature_counts.sh
+142_hisat2.sh.err  195_mapping_stats.sh.err  258_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  hisat2.sh
+142_hisat2.sh.out  195_mapping_stats.sh.out  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   mapping.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ 
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   feature_counts.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.sam                   hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh   
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29739712
+drwxr-sr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:35 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 11:23 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1975 May  2 12:01 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1945 May  2 11:21 mapping_stats.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls                       
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe_sorted.bam           mapping.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   feature_counts.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.sam                   hisat2.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping_stats.sh 
+Submitted batch job 256
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               256       cpu mapping_ dpag0390  R       0:07      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe.idxstats_fastqc.zip  feature_counts.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe.sam                  hisat2.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out     aln-pe_sorted.bam.bai       mapping_stats.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29739716
+drwxr-sr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:40 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:40 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 12:40 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1975 May  2 12:01 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1959 May  2 12:39 mapping_stats.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err           aln-pe.idxstats_fastqc.zip  feature_counts.sh
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out           aln-pe.sam                  hisat2.sh
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out     aln-pe_sorted.bam.bai       mapping_stats.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  81_slurm_template.sh.err     aln-pe_sorted.flagstat      slurm_mapping.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_template.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  aln-pe.bam                   cd4_rep1_read1_fastqc.zip
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 256_mapping_stats.sh.err
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 256_mapping_stats.sh.err
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano mapping_stats.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch mapping_stats.sh 
+Submitted batch job 258
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               258       cpu mapping_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  133_hisat2.sh.out   158_mapping.sh.err        195_mapping_stats.sh.out   235_mapping.sh.err        aln-pe.idxstats              cd4_rep1_read1_fastqc.zip
+107_hisat2.sh.out  140_hisat2.sh.err   158_mapping.sh.out        197_mapping_stats.sh.err   235_mapping.sh.out        aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.html
+116_hisat2.sh.err  140_hisat2.sh.out   167_mapping.sh.err        197_mapping_stats.sh.out   256_mapping_stats.sh.err  aln-pe.idxstats_fastqc.zip   cd4_rep2_read2_fastqc.zip
+116_hisat2.sh.out  142_hisat2.sh.err   167_mapping.sh.out        214_feature_counts.sh.err  256_mapping_stats.sh.out  aln-pe.sam                   feature_counts.sh
+122_hisat2.sh.err  142_hisat2.sh.out   186_mapping_stats.sh.err  214_feature_counts.sh.out  258_mapping_stats.sh.err  aln-pe_sorted.bam            hisat2.sh
+122_hisat2.sh.out  143_hisat2.sh.err   186_mapping_stats.sh.out  220_feature_counts.sh.err  258_mapping_stats.sh.out  aln-pe_sorted.bam.bai        mapping.sh
+127_hisat2.sh.err  143_hisat2.sh.out   189_mapping_stats.sh.err  220_feature_counts.sh.out  81_slurm_template.sh.err  aln-pe_sorted.flagstat       mapping_stats.sh
+127_hisat2.sh.out  156_mapping.sh.err  189_mapping_stats.sh.out  226_feature_counts.sh.err  81_slurm_template.sh.out  aln-pe_sorted.idxstats       slurm_mapping.sh
+133_hisat2.sh.err  156_mapping.sh.out  195_mapping_stats.sh.err  226_feature_counts.sh.out  aln-pe.bam                cd4_rep1_read1_fastqc.html   slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc aln-pe_sorted.idxstats 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/aln-pe_sorted.idxstats
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+          samtools | Found 1 idxstats reports
+     write_results | Data        : multiqc_data
+     write_results | Report      : multiqc_report.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh   
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 261
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               261       cpu feature_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.err   167_mapping.sh.err        214_feature_counts.sh.err  258_mapping_stats.sh.err     aln-pe.sam                  hisat2.sh
+107_hisat2.sh.out  140_hisat2.sh.out   167_mapping.sh.out        214_feature_counts.sh.out  258_mapping_stats.sh.out     aln-pe_sorted.bam           mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.err   186_mapping_stats.sh.err  220_feature_counts.sh.err  261_feature_counts.sh.err    aln-pe_sorted.bam.bai       mapping_stats.sh
+116_hisat2.sh.out  142_hisat2.sh.out   186_mapping_stats.sh.out  220_feature_counts.sh.out  261_feature_counts.sh.out    aln-pe_sorted.flagstat      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.err   189_mapping_stats.sh.err  226_feature_counts.sh.err  81_slurm_template.sh.err     aln-pe_sorted.idxstats      multiqc_report.html
+122_hisat2.sh.out  143_hisat2.sh.out   189_mapping_stats.sh.out  226_feature_counts.sh.out  81_slurm_template.sh.out     cd4_rep1_read1_fastqc.html  slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.err  195_mapping_stats.sh.err  235_mapping.sh.err         aln-pe.bam                   cd4_rep1_read1_fastqc.zip   slurm_template.sh
+127_hisat2.sh.out  156_mapping.sh.out  195_mapping_stats.sh.out  235_mapping.sh.out         aln-pe.idxstats              cd4_rep2_read2_fastqc.html
+133_hisat2.sh.err  158_mapping.sh.err  197_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.out  158_mapping.sh.out  197_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat feature_counts.sh.err
+cat: feature_counts.sh.err: No such file or directory
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cbatch feature_counts.sh 
+zsh: command not found: cbatch
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 263
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               263       cpu feature_ dpag0390  R       0:05      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.err   167_mapping.sh.err        214_feature_counts.sh.err  258_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  cd4_rep2_read2_fastqc.zip
+107_hisat2.sh.out  140_hisat2.sh.out   167_mapping.sh.out        214_feature_counts.sh.out  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.err   186_mapping_stats.sh.err  220_feature_counts.sh.err  261_feature_counts.sh.err  aln-pe.sam                   hisat2.sh
+116_hisat2.sh.out  142_hisat2.sh.out   186_mapping_stats.sh.out  220_feature_counts.sh.out  261_feature_counts.sh.out  aln-pe_sorted.bam            mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.err   189_mapping_stats.sh.err  226_feature_counts.sh.err  263_feature_counts.sh.err  aln-pe_sorted.bam.bai        mapping_stats.sh
+122_hisat2.sh.out  143_hisat2.sh.out   189_mapping_stats.sh.out  226_feature_counts.sh.out  263_feature_counts.sh.out  aln-pe_sorted.flagstat       multiqc_data
+127_hisat2.sh.err  156_mapping.sh.err  195_mapping_stats.sh.err  235_mapping.sh.err         81_slurm_template.sh.err   aln-pe_sorted.idxstats       multiqc_report.html
+127_hisat2.sh.out  156_mapping.sh.out  195_mapping_stats.sh.out  235_mapping.sh.out         81_slurm_template.sh.out   cd4_rep1_read1_fastqc.html   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.err  197_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.bam                 cd4_rep1_read1_fastqc.zip    slurm_template.sh
+133_hisat2.sh.out  158_mapping.sh.out  197_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats            cd4_rep2_read2_fastqc.html
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 263_feature_counts.sh.err
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.8
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           aln-pe_sorted.bam                                ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : Mus_musculus.GRCm39.113.gtf.gz (GTF)             ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Mus_musculus.GRCm39.113.gtf.gz ...                    ||
+||    Features : 1298756                                                      ||
+||    Meta-features : 78298                                                   ||
+||    Chromosomes/contigs : 38                                                ||
+||                                                                            ||
+|| Process BAM file aln-pe_sorted.bam...                                      ||
+ERROR: Paired-end reads were detected in single-end read library : aln-pe_sorted.bam
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 265
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               264       cpu rnaseq_c lady6692  R       3:21      1 obds
+               265       cpu feature_ dpag0390  R       0:04      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls 
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ head counts.txt
+# Program:featureCounts v2.0.8; Command:"featureCounts" "-p" "-t" "exon" "-g" "gene_id" "-a" "/project/dpag0390/linux/2_genome/Mus_musculus.GRCm39.113.gtf.gz" "-o" "counts.txt" "aln-pe_sorted.bam" 
+Geneid	Chr	Start	End	Strand	Length	aln-pe_sorted.bam
+ENSMUSG00000104478	1	108344807	108347562	+	2756	0
+ENSMUSG00000104385	1	6980784	6981446	+	663	0
+ENSMUSG00000101231	1	108540067	108540244	-	178	0
+ENSMUSG00000102135	1;1	6986783;6993624	6987219;6993812	+;+	626	0
+ENSMUSG00000103282	1	6999983	7000012	+	30	0
+ENSMUSG00000101097	1	108697865	108699733	+	1869	0
+ENSMUSG00000100764	1;1;1	43781121;43782744;43782986	43781266;43783012;43783055	-;-;-	458	2
+ENSMUSG00000102534	1	7068441	7068765	+	325	0
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ tail counts.txt
+ENSMUSG00000095019	JH584303.1	81607	82689	+	1083	0
+ENSMUSG00000094915	GL456212.1;GL456212.1	31967;34741	32140;34932	-;-	366	0
+ENSMUSG00000079808	GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1;GL456212.1	128555;130719;131304;135153;136529;137840;139015;140666;142982;145844;147542;150277	129000;130861;131405;135221;136681;137920;139092;140743;143248;146012;147689;150452	-;-;-;-;-;-;-;-;-;-;-;-	1910	69
+ENSMUSG00000095041	JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1;JH584304.1	52190;52691;53536;54721;55112;55112;56986;56986;58564;58564;59592	52367;54867;54479;54867;55701;55701;57151;57151;59690;58835;59667	-;-;-;-;-;-;-;-;-;-;-	4238	6929
+ENSMUSG00000144201	JH584304.1;JH584304.1	24951;56778	25441;56818	-;-	532	24
+ENSMUSG00002075400	GL456239.1	38438	38535	+	98	0
+ENSMUSG00002074970	GL456385.1	31243	31343	+	101	0
+ENSMUSG00002075729	GL456385.1	32719	32818	+	100	0
+ENSMUSG00002074899	GL456372.1	13262	13382	-	121	1
+ENSMUSG00002076890	GL456381.1	16623	16721	-	99	0
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+           multiqc | No analysis results found. Cleaning up…
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls -la
+total 29775456
+drwxr-sr-x 3 dpag0390 grp_obds_trainers        4096 May  2 13:01 .
+drwxr-sr-x 5 dpag0390 grp_obds_trainers         105 May  1 12:42 ..
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         462 May  1 14:21 107_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:21 107_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         489 May  1 14:26 116_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:26 116_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         105 May  1 14:30 122_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:30 122_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:32 127_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:32 127_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         129 May  1 14:44 133_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:44 133_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         207 May  1 14:52 140_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:52 140_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          97 May  1 14:54 142_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:54 142_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         179 May  1 15:17 143_hisat2.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  1 14:56 143_hisat2.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          40 May  2 10:45 156_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:45 156_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          72 May  2 10:48 158_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:48 158_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         268 May  2 11:08 167_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 10:55 167_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:15 186_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:15 186_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         156 May  2 11:17 189_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:17 189_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         142 May  2 11:19 195_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:19 195_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         248 May  2 11:22 197_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:22 197_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:49 214_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:49 214_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 11:56 220_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 11:56 220_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers          48 May  2 12:02 226_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:02 226_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         160 May  2 12:20 235_mapping.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:08 235_mapping.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:40 256_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:45 258_mapping_stats.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:45 258_mapping_stats.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2803 May  2 12:49 261_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:49 261_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2803 May  2 12:54 263_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:54 263_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        3691 May  2 13:01 265_feature_counts.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers           0 May  2 12:59 265_feature_counts.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1910 May  1 12:52 81_slurm_template.sh.err
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         126 May  1 12:52 81_slurm_template.sh.out
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  4401869213 May  2 12:17 aln-pe.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:40 aln-pe.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      189635 May  2 11:29 aln-pe.idxstats_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers       61913 May  2 11:29 aln-pe.idxstats_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers 22741581824 May  1 15:17 aln-pe.sam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers  3304007454 May  2 12:29 aln-pe_sorted.bam
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     3796784 May  2 12:30 aln-pe_sorted.bam.bai
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         542 May  2 12:45 aln-pe_sorted.flagstat
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1675 May  2 12:45 aln-pe_sorted.idxstats
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      568250 May  1 10:16 cd4_rep1_read1_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      351531 May  1 10:16 cd4_rep1_read1_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      560249 May  1 10:19 cd4_rep2_read2_fastqc.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers      343165 May  1 10:19 cd4_rep2_read2_fastqc.zip
+-rw-r--r-- 1 dpag0390 grp_obds_trainers    31787645 May  2 13:01 counts.txt
+-rw-r--r-- 1 dpag0390 grp_obds_trainers         385 May  2 13:01 counts.txt.summary
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1978 May  2 12:59 feature_counts.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        2103 May  1 14:55 hisat2.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1964 May  2 12:08 mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1966 May  2 12:44 mapping_stats.sh
+drwxr-xr-x 2 dpag0390 grp_obds_trainers        4096 May  2 12:46 multiqc_data
+-rw-r--r-- 1 dpag0390 grp_obds_trainers     4781670 May  2 12:46 multiqc_report.html
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  2 10:29 slurm_mapping.sh
+-rw-r--r-- 1 dpag0390 grp_obds_trainers        1980 May  1 12:47 slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_report.html
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   slurm_mapping.sh
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  slurm_template.sh
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt.summary 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt.summary
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+     featurecounts | Found 1 reports
+     write_results | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
+     write_results | Data        : multiqc_data_1
+     write_results | Report      : multiqc_report_1.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 2_genome 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cat downloads.txt 
+I googled 'embl GRCm39'
+then from the Ensembl page I took the download tab at top of screen
+then dataset and database box bottom left and clicked on FTP site link
+from both the current fasta/ and current gtf/ folders I found the correct files and 'control click' copied the URL which I pasted into the command line
+
+eg. wget ftp.ensembl.org/pub/current_gtf/mus_musculus/Mus_musculus.GRCm39.113.gtf.gz
+ 
+to download this file I used filezilla
+host obds
+username dpag0390
+password Scott_Mac_2025
+Port 22
+
+then I navigated to the folder in my linux files and selected to the doc to download.
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ wget ftp.ensembl.org/pub/release-102/gtf/mus_musculus/Mus_musculus.GRCm38.102.gtf.gz .
+--2025-05-02 13:39:35--  http://ftp.ensembl.org/pub/release-102/gtf/mus_musculus/Mus_musculus.GRCm38.102.gtf.gz
+Resolving ftp.ensembl.org (ftp.ensembl.org)... 193.62.193.169
+Connecting to ftp.ensembl.org (ftp.ensembl.org)|193.62.193.169|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 33443321 (32M) [application/x-gzip]
+Saving to: ‘Mus_musculus.GRCm38.102.gtf.gz’
+
+Mus_musculus.GRCm38.102.gtf.gz              100%[===========================================================================================>]  31.89M   105MB/s    in 0.3s    
+
+2025-05-02 13:39:36 (105 MB/s) - ‘Mus_musculus.GRCm38.102.gtf.gz’ saved [33443321/33443321]
+
+--2025-05-02 13:39:36--  http://./
+Resolving . (.)... failed: No address associated with hostname.
+wget: unable to resolve host address ‘.’
+FINISHED --2025-05-02 13:39:36--
+Total wall clock time: 0.4s
+Downloaded: 1 files, 32M in 0.3s (105 MB/s)
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ ls
+downloads.txt  Mus_musculus.GRCm38.102.gtf.gz  Mus_musculus.GRCm39.113.gtf.gz  Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/2_genome$ cd ..
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux$ cd 3_analysis 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ ls
+1_fastqc  reports  rnaseq_commands.sh  slurm_analysis
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis$ cd 1_fastqc 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats_fastqc.zip   counts.txt.summary
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.sam                   feature_counts.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ nano feature_counts.sh 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ sbatch feature_counts.sh 
+Submitted batch job 275
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+               273       cpu rnaseq_c lady6692  R       0:18      1 obds
+               274       cpu slurm_fe bioc1402  R       0:12      1 obds
+               275       cpu feature_ dpag0390  R       0:06      1 obds
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ watch squeue 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe.idxstats_fastqc.zip  counts.txt.summary
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         275_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   275_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ cat 275_feature_counts.sh.err
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.8
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           aln-pe_sorted.bam                                ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : Mus_musculus.GRCm38.102.gtf.gz (GTF)             ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Mus_musculus.GRCm38.102.gtf.gz ...                    ||
+||    Features : 843712                                                       ||
+||    Meta-features : 55487                                                   ||
+||    Chromosomes/contigs : 45                                                ||
+||                                                                            ||
+|| Process BAM file aln-pe_sorted.bam...                                      ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 104299805                                            ||
+||    Successfully assigned alignments : 46701573 (44.8%)                     ||
+||    Running time : 1.67 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "counts.txt.summary"      ||
+||                                                                            ||
+\\============================================================================//
+
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ 
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  140_hisat2.sh.out   186_mapping_stats.sh.err   220_feature_counts.sh.out  263_feature_counts.sh.err    aln-pe.idxstats_fastqc.zip  counts.txt.summary
+107_hisat2.sh.out  142_hisat2.sh.err   186_mapping_stats.sh.out   226_feature_counts.sh.err  263_feature_counts.sh.out    aln-pe.sam                  feature_counts.sh
+116_hisat2.sh.err  142_hisat2.sh.out   189_mapping_stats.sh.err   226_feature_counts.sh.out  265_feature_counts.sh.err    aln-pe_sorted.bam           hisat2.sh
+116_hisat2.sh.out  143_hisat2.sh.err   189_mapping_stats.sh.out   235_mapping.sh.err         265_feature_counts.sh.out    aln-pe_sorted.bam.bai       mapping.sh
+122_hisat2.sh.err  143_hisat2.sh.out   195_mapping_stats.sh.err   235_mapping.sh.out         275_feature_counts.sh.err    aln-pe_sorted.flagstat      mapping_stats.sh
+122_hisat2.sh.out  156_mapping.sh.err  195_mapping_stats.sh.out   256_mapping_stats.sh.err   275_feature_counts.sh.out    aln-pe_sorted.idxstats      multiqc_data
+127_hisat2.sh.err  156_mapping.sh.out  197_mapping_stats.sh.err   256_mapping_stats.sh.out   81_slurm_template.sh.err     cd4_rep1_read1_fastqc.html  multiqc_data_1
+127_hisat2.sh.out  158_mapping.sh.err  197_mapping_stats.sh.out   258_mapping_stats.sh.err   81_slurm_template.sh.out     cd4_rep1_read1_fastqc.zip   multiqc_report_1.html
+133_hisat2.sh.err  158_mapping.sh.out  214_feature_counts.sh.err  258_mapping_stats.sh.out   aln-pe.bam                   cd4_rep2_read2_fastqc.html  multiqc_report.html
+133_hisat2.sh.out  167_mapping.sh.err  214_feature_counts.sh.out  261_feature_counts.sh.err  aln-pe.idxstats              cd4_rep2_read2_fastqc.zip   slurm_mapping.sh
+140_hisat2.sh.err  167_mapping.sh.out  220_feature_counts.sh.err  261_feature_counts.sh.out  aln-pe.idxstats_fastqc.html  counts.txt                  slurm_template.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ multiqc counts.txt.summary 
+
+/// MultiQC 🔍 v1.28
+
+       file_search | Search path: /project/dpag0390/linux/3_analysis/1_fastqc/counts.txt.summary
+         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 1/1  
+     featurecounts | Found 1 reports
+     write_results | Existing reports found, adding suffix to filenames. Use '--force' to overwrite.
+     write_results | Data        : multiqc_data_1_2
+     write_results | Report      : multiqc_report_2.html
+           multiqc | MultiQC complete
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ ls
+107_hisat2.sh.err  143_hisat2.sh.err         197_mapping_stats.sh.err   261_feature_counts.sh.err    aln-pe.sam                  mapping_stats.sh
+107_hisat2.sh.out  143_hisat2.sh.out         197_mapping_stats.sh.out   261_feature_counts.sh.out    aln-pe_sorted.bam           multiqc_data
+116_hisat2.sh.err  156_mapping.sh.err        214_feature_counts.sh.err  263_feature_counts.sh.err    aln-pe_sorted.bam.bai       multiqc_data_1
+116_hisat2.sh.out  156_mapping.sh.out        214_feature_counts.sh.out  263_feature_counts.sh.out    aln-pe_sorted.flagstat      multiqc_data_1_2
+122_hisat2.sh.err  158_mapping.sh.err        220_feature_counts.sh.err  265_feature_counts.sh.err    aln-pe_sorted.idxstats      multiqc_report_1.html
+122_hisat2.sh.out  158_mapping.sh.out        220_feature_counts.sh.out  265_feature_counts.sh.out    cd4_rep1_read1_fastqc.html  multiqc_report_2.html
+127_hisat2.sh.err  167_mapping.sh.err        226_feature_counts.sh.err  275_feature_counts.sh.err    cd4_rep1_read1_fastqc.zip   multiqc_report.html
+127_hisat2.sh.out  167_mapping.sh.out        226_feature_counts.sh.out  275_feature_counts.sh.out    cd4_rep2_read2_fastqc.html  slurm_mapping.sh
+133_hisat2.sh.err  186_mapping_stats.sh.err  235_mapping.sh.err         81_slurm_template.sh.err     cd4_rep2_read2_fastqc.zip   slurm_template.sh
+133_hisat2.sh.out  186_mapping_stats.sh.out  235_mapping.sh.out         81_slurm_template.sh.out     counts.txt
+140_hisat2.sh.err  189_mapping_stats.sh.err  256_mapping_stats.sh.err   aln-pe.bam                   counts.txt.summary
+140_hisat2.sh.out  189_mapping_stats.sh.out  256_mapping_stats.sh.out   aln-pe.idxstats              feature_counts.sh
+142_hisat2.sh.err  195_mapping_stats.sh.err  258_mapping_stats.sh.err   aln-pe.idxstats_fastqc.html  hisat2.sh
+142_hisat2.sh.out  195_mapping_stats.sh.out  258_mapping_stats.sh.out   aln-pe.idxstats_fastqc.zip   mapping.sh
+(obds-rnaseq) dpag0390@obds:/project/dpag0390/linux/3_analysis/1_fastqc$ 
